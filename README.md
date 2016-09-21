@@ -8,7 +8,7 @@ Run)
 
  E.g
 
- $ docker run -d -p 8080:8080 -v /persistent_storage/music/:/music:ro -v /persistent_storage/subsonic/:/subsonic subsonic
+ $ docker run -d -p 8080:8080 -v /persistent_storage/music/:/music:ro -v /persistent_storage/subsonic/:/subsonic alagerstrom/docker_subsonic
 
 
 If you want to use docker compose I have added a example file to show you how that could be done.
