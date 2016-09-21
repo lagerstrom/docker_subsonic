@@ -1,0 +1,5 @@
+subsonic:
+  build: .
+  volumes:
+   - /persistent/music/:/music:ro
+   - /persistent_storage/subsonic/:/subsonic
