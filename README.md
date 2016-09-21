@@ -1,14 +1,10 @@
 ## Subsonic Dockerfile ##
 
-Build)
-
- $ docker build -t subsonic .
-
 Run)
 
  * Create a mountable data directory for subsonic on the host.
 
- $ docker run -d -p 8080:8080 -v <music directory>:/music:ro -v <subsonic data directory>:/subsonic subsonic
+ $ docker run -d -p 8080:8080 -v \<music directory\>:/music:ro -v \<subsonic data directory\>:/subsonic alagerstrom/docker_subsonic
 
  E.g
 
