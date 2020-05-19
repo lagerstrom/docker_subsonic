@@ -13,13 +13,13 @@ ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
 
-# Specifies where to download subsonic from
-ENV SUB_URL http://subsonic.org/download/subsonic-6.0.deb
-
 # Install java7 and wget
 RUN apt-get update && apt-get install -y\
     openjdk-7-jre\
     wget
+
+# Specifies where to download subsonic from
+ENV SUB_URL https://s3-eu-west-1.amazonaws.com/subsonic-public/download/subsonic-6.1.6.deb
 
 # Remove apt cache
 RUN rm -rf /var/lib/apt/lists/*
